@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'VT323', monospace;
+}
+
+.text-shadow-neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* 定义霓虹灯文字闪烁的动画 */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 0, 255, 0.6), 0 0 16px rgba(255, 0, 255, 0.4);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.6), 0 0 8px rgba(255, 0, 255, 0.4), 0 0 12px rgba(255, 0, 255, 0.2);
+  }
+}
+
+/* 给文字添加闪烁效果的类 */
+.neon-blink {
+  animation: blink 2s infinite;
+}
