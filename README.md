@@ -1,7 +1,7 @@
 # 简单Web音乐播放器
 
 ## 项目介绍
-基于 React、TypeScript 和 Vite 构建的小型音乐网页播放器。
+> **基于 React、TypeScript 和 Vite 构建的小型音乐网页播放器。**
 ### 主要功能
 + 文字闪烁
 + 播放/暂停
