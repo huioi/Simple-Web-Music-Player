@@ -226,9 +226,7 @@ function App() {
       </div>
       <audio ref={audioRef} />
       <p className="text-center mt-16 mb-4">
-        <a href="https://www.jojojo.fun" target="_blank" rel="noopener noreferrer">
           Work, Read, Meditate, Relax~~~
-        </a>
       </p>
     </div>
   );
