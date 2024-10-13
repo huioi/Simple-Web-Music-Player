@@ -32,7 +32,7 @@
 ### 部署到服务器（Linux系统 & Docker方式）
 1、将项目文件上传至服务器
 <br>
-2、在项目所在目录分别添加文件`Dockerfile`和`.dockerignore`
+2、在服务器项目所在目录添加文件`Dockerfile`
 ```Dockerfile配置
 # 使用 Node.js 18 的镜像进行构建
 FROM node:18-alpine AS build
@@ -53,13 +53,6 @@ COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 # 容器启动时运行 nginx
 CMD ["nginx", "-g", "daemon off;"]
-```
-```.dockerignore配置
-node_modules
-npm-debug.log
-Dockerfile
-.dockerignore
-.git
 ```
 3、终端中`cd`到项目所在目录
 <br>
