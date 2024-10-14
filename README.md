@@ -54,7 +54,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 3、终端中`cd`到项目所在目录
 <br>
-4、输入`docker build -t 1-1-radio .`（用于构建 Docker 镜像，它会根据当前目录(或指定的路径)下的 Dockerfile 文件来创建镜像。）
+4、输入`docker build -t 1-1-radio .`（用于构建 Docker 镜像，它会根据当前目录(或指定的路径)下的`Dockerfile`文件来创建镜像。）
 <br>
 5、运行完成后输入`docker run -d -p 7777:80 --restart always 1-1-radio`（根据Docker镜像生成一个新的容器实例，并配置运行环境）
 ### 部署到网站
