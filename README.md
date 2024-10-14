@@ -24,7 +24,7 @@
 
 ## 关于其他
 ### 音乐列表
-1、在音乐文件夹`public/music`内增添音乐文件
+1、在音乐文件夹`/public/music`内增添音乐文件
 <br>
 2、同时修改音乐列表`/src/musicList.ts`
 ### 部署到服务器（Linux系统 & Docker方式）
